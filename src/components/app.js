@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from './header'
-import CounterContainer from '../containers/counter'
 
 const App = () => {
   return (
     <div>
       <Header />
-      <CounterContainer/>
+      Hello! This app has a sample component and container.
+      Take a look at the <a className="counter" href="/counter">Counter</a>
     </div>
   )
 };
