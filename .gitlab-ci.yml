@@ -2,9 +2,17 @@ image: kkarczmarczyk/node-yarn
 stages:
   - build
   - test
+  - deploy
 build:
   stage: build
   script: yarn install
 test:
   stage: test
   script: yarn install; yarn test
+deploy:
+  stage: deploy
+  script: yarn install; yarn build
+  when: manual
+  artifacts:
+    paths:
+      - build
