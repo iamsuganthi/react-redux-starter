@@ -1,0 +1,10 @@
+image: kkarczmarczyk/node-yarn
+stages:
+  - build
+  - test
+build:
+  stage: build
+  script: yarn install
+test:
+  stage: test
+  script: yarn install; yarn test
