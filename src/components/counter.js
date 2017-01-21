@@ -3,12 +3,12 @@ import Header from './header'
 import {RaisedButton, Paper} from 'material-ui'
 
 const Counter = ({counter, onIncrement, onDecrement}) => {
-  return <div className="count">
+  return <div>
   <Header/>
     <Paper>
-        <div> Count: {counter} <br/></div>
-        <RaisedButton className="increment" onTouchTap={onIncrement} secondary > + </RaisedButton>
-        <RaisedButton className="decrement" onTouchTap={onDecrement} primary > - </RaisedButton>
+        <div className="count"> Count: {counter} <br/></div>
+        <RaisedButton className="increment" onClick={onIncrement} secondary > + </RaisedButton>
+        <RaisedButton className="decrement" onClick={onDecrement} primary > - </RaisedButton>
     </Paper>
   </div>
 };
