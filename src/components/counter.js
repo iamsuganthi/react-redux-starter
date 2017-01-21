@@ -1,12 +1,15 @@
 import React, {PropTypes} from 'react'
 import Header from './header'
+import {RaisedButton, Paper} from 'material-ui'
 
 const Counter = ({counter, onIncrement, onDecrement}) => {
   return <div className="count">
-    <Header />
-    {counter} <br/>
-    <button className="increment" onClick={onIncrement}> + </button>
-    <button className="decrement" onClick={onDecrement}> - </button>
+  <Header/>
+    <Paper>
+        <div> Count: {counter} <br/></div>
+        <RaisedButton className="increment" onTouchTap={onIncrement} secondary > + </RaisedButton>
+        <RaisedButton className="decrement" onTouchTap={onDecrement} primary > - </RaisedButton>
+    </Paper>
   </div>
 };
 

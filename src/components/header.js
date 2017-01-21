@@ -1,7 +1,8 @@
 import React from 'react'
+import {AppBar} from 'material-ui'
 
 const Header = () => {
-  return <h1> React + Redux = Fun! </h1>
+  return <AppBar title="React + Redux = Fun!"/>
 };
 
 export default Header;
