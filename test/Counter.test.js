@@ -1,6 +1,6 @@
 import { shallow, mount, render } from 'enzyme';
 import React from 'react';
-import Counter from '../src/components/counter'
+import Counter from '../src/components/Counter'
 
 describe('Counter', () => {
   let wrapper, increment, decrement;

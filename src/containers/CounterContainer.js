@@ -1,4 +1,4 @@
-import Counter from '../components/counter'
+import Counter from '../components/Counter'
 import {connect} from 'react-redux'
 import {increment, decrement} from '../actions/actions'
 

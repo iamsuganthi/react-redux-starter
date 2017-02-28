@@ -3,7 +3,7 @@ import {render} from 'react-dom';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux'
 import App from './components/app';
-import CounterContainer from './containers/counter';
+import CounterContainer from './containers/CounterContainer';
 import reducer from './reducers/reducers'
 import {Router, Route, browserHistory} from 'react-router'
 
